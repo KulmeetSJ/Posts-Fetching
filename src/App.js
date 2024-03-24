@@ -1,14 +1,13 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Posts from "./components/Posts";
 import ApiContextProvider from "./context/ApiContext";
+import Main from "./components/Main";
 
 function App() {
   return (
     <ApiContextProvider>
-      <div className="w-[75vw] mx-auto  ">
+      <div className="w-[85vw] mx-auto ">
         {" "}
-        <Navbar /> <Posts />
+        <Main />
       </div>
     </ApiContextProvider>
   );
